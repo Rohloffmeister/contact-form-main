@@ -172,6 +172,11 @@ input[type="checkbox"]{
     accent-color: hsl(169, 82%, 27%);
    
 }
+input[type="checkbox"]:focus{
+    outline: 1px hsl(169, 82%, 27%) solid;
+    
+   
+}
 input[type="radio"]:checked{
     
     accent-color: hsl(169, 82%, 27%);
@@ -180,6 +185,7 @@ div:has(> input[type="radio"]:checked){
     background-color: hsla(162, 82%, 27%, 0.281);
     outline:1px hsl(169, 82%, 27%) solid;
 }
+
 
 
 input[type="submit"]{
@@ -194,7 +200,9 @@ input[type="submit"]{
 form > div > label, form > div > div > label, fieldset > legend{
     margin-bottom: 10px;
 }
-
+div:has(>input[type="radio"]:focus){
+    outline:2px hsl(169, 82%, 27%) solid;
+}
 @media only screen and (max-width:600px) {
     #form-names{
         flex-direction: column;
